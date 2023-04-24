@@ -31,3 +31,38 @@ Hybrid Deployment:
 8. Incereased Speed, especially for research and development
 9. Global reach -> deploy apps to consumers everywhere
 
+
+## AWS Infrastructure
+
+- Global Infrastructure with data centers all over the world.
+- Deploy apps across the globe or to a specific location.
+
+## AWS Regions
+
+- different regions have different regulations, customer, proximity, service availablitiy, and pricing.
+- Different regions also have different regulations due to governance, some countries do not allow sensitive data to be processed and stored abroad.
+- Customer proximity - seleting a  region near your customers can help to make services faster.
+- Region Specific Services:
+  - Not all AWS data centers support all services and features.
+  - AWS often builds new features, they must make the necessary infrastructure available in the data centers.
+
+## Availablity Zones
+
+- An availablitiy Zone is a single data center or a group of data centers in a region
+- Data centers are typically many miles apart to reduce risk in event of disaster.
+
+E.g. The region: eu-west-1 has zones: 
+- eu-west-1a
+- eu-west-1b
+- eu-west-1c
+
+
+## How to Interact
+
+- AWS Management Console: Web based interface to access and manage services
+- AWS Command Line Interface:
+  - Save time when making API requests
+  - Control Multiple services with a single tool
+  - Automate actions on services with Scripts
+- Software Development Kits: Eases use of AWS Services through an API
+- API fitted to platform or programming language being used
