@@ -170,3 +170,28 @@ Maximum time -> 3600 seconds
 Default -> 300 seconds
 
 The maximum timeout is not applicable to unhealth instances.
+
+## Instance Stores
+
+- Storage volume which acts as a physical hard drive
+- Temporary storage for the EC2 instance
+- Data in the instance store persists during the lifetime of the instance. 
+  - If the instance reboots, data will persist.
+- When instance hibernates or terminates, any data in the instance store will be lost.
+- If instance starts from a stopped state, it might be on another host where the used instance store does not exist.
+- Typically recommended for temp files.
+
+## Elastic Block Store
+
+- A service which provides storage volumes, typically used for data which must persist.
+- It is good pracice to backup data with AWS EBS snapshots
+- After creating an EBS volume, you can attach it to an AWS EC2 instance. If the EC2 instance is stopped or termnated, all data on the EBS volume remains
+
+## EBS Snapshots
+
+EBS snapshot is an incremental data backup:
+- First backup of volume backs up all data
+- Seubsequent backups copy only a block of data that has changed since the last snapshot
+- Saves on storage cosst by not duplicating data
+- Only data unique to snapshot is removed when deleting the snapshot, if EC2 instance stops or is terminated, all data on EBS volume remains.
+
