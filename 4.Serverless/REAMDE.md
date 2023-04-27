@@ -2,14 +2,28 @@
 
 - Do not think about servers, no server management as opposed to EC2 Config
 - Suitable for Scaling
+- Providing backend services on an as-used basis
+- Write/deploy code without infrastructure
+- Function as a Service (FaaS)
+- Capacity provisioning 
+- Automatic Scaling, built in high availability, pay for value billing model
 
 ## Lambda
 
 - Serverless Compute Service
+- Event driven Compute Service
 - Run code without managing servers
-- Pay for used compute time
+- Pay for used compute time based on 100ms internals and number of times your code is triggered
 - Used to build, deploy, monitor and maintain apps
-
+- Monitor through Cloudwatch
+- Increase performance by increasing RAM
+- Used for real time data and file processing, and stream processing
+- Standard Lambda timeout is 15 minutes, or 900 seconds
+- Lambda Edge - cloudfront feature, run code closer to users
+- Lambda Custom Authorisation:
+  - Serverless Function to authorise access to APIs
+  - Lambda authoriser uses bearer authorisation such as SAML or OAuth
+  - Lambda returns an IAM policy for the user when invocated
 ## Containers
 
 - Used to deploy and manage applications in the cloud
@@ -56,3 +70,54 @@ A web infrastructure management service which handles deployment and scaling for
   - automatic scaling,
   - application health monitoring
 
+## Cloudfront (CDN)
+
+- Content Delivery Network
+- Low Latency and High transfer Speeds
+- Improves Application performance
+- Cache content at edge locations
+- Works with AWS Shield for DDoS mitigation
+
+## Cloudfront Origin
+
+- Origin is location where content is stored, and from which cloudfront gets content to servers to customers
+- Origin types may include S3, EC2, ALB, HTTP Backend
+
+## Cloudfront Geo Restrictions
+
+- Restrict access to your content based on user location
+- Configure whitelist/blacklist
+- Use WAF to monitor and restrict HTTP and HTTP Requests
+- Cloudfront for static content available vs S3 Cross region replication for dynamic conent that needs to be available at low latency in few regions
+
+## Cloudfront Signed URL/Signed Cookies
+
+- Premium Content to paid users
+  - Valid IP ranges
+  - URL expiration
+  - Trusted Signer (AWS accounts that can create signed URLs):
+    - Signed URLs: access to individual files
+    - Signed Cookie: reuse same cookie for multiple files
+
+## Cloudfront Signed URL
+
+- Control Access to a path, so that any origin is supported
+- USes account wide key pair, which only root user can manage
+- Set parameteres such as expiration, IP, and path
+
+## Serverless Application Model (SAM)
+
+- Serverless application Model
+  - use SAM to define serverless applications
+  - Framework for deploying and deploying serverless applications
+  - Single Deployment Configuration:
+    - Easy to organise related components and resources operate on a single track
+    - run Lambda, API Gateway, DynamoDB
+    - Local Debugging and Testing
+
+## Step Functions
+- build serverless workflows to orchestrate lambda functions
+- Represent JSON state machine
+- Use step functions over simple workflow except for when:
+  - external signal is required
+  - Need child process to return value to parent process

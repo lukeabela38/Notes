@@ -107,6 +107,31 @@ VPC peering is a networking connection between two VPCs which enables you to rou
 - Security groups have stateful packet filtering
   - They remember the actions they have taken with packets in the past.
 
+## Dos - Denial of Service Attacks
 
+- Effort to make an application or website inaccessible, DoS causes a flood of data that overloads an application or website network
+  - DoS Attck comes from a single source
 
+- Distrobuted Denial of Service DDoS
+  - originates from different sources
+  - Attacker may use bots - infected computers that flood the app with traffic
+
+## AWS Shield
+
+- Service for Protection against DoS and DDoS attacks
+- Shield Standard: protect all aws users at no extra expense
+- Shield Advanced: provides attack details and can minimise effects of more complex attacks (paid service)
+
+## AWS WAF
+
+- Web application Firewall
+  - monitor application network requests
+  - Allow or black network traffic
+  - Uses ACL
+
+## AWS GuardDuty
+
+- threat detection service
+- Detect threats by monitoring network activity
+- Reports threats and fixes recommendations
 
