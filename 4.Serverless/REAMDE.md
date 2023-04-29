@@ -121,3 +121,9 @@ A web infrastructure management service which handles deployment and scaling for
 - Use step functions over simple workflow except for when:
   - external signal is required
   - Need child process to return value to parent process
+
+
+## AWS Proton
+
+Deploy serverless or container based application with efficiency, consistency, and control. Define infrastructure standards and effective continous delivery pipelines. It is commonly used by developers to manage architecture.
+

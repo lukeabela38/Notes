@@ -15,7 +15,9 @@
 1. Firehouse: Load Streams into stores near real time
 2. Analytics: Analyse streams with SQL or Apache.
 
+## EMR
 
+Amazon EMR (elasticmap reduce) is a managed cluster platform that simplifies running big data frameworks, such as Apache Hadoop and Apache Spark, on AWS to process and analyse vast amounts of data. Used to process data for analytics purposes and business intelligence. EMR is specifically used for big data processing.
 ## Glue
 
 - Serverless data inetgration
