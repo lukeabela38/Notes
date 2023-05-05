@@ -135,6 +135,15 @@ VPC peering is a networking connection between two VPCs which enables you to rou
 - Detect threats by monitoring network activity
 - Reports threats and fixes recommendations
 
+## AWS Macie
+
+Automate sensitive data discovery at scale and gain cost efficient visibility into sensitive dat stored in S3. It is speicifcally used to detect policy changes in S3 buckets.
+## Elastic IP
+
+An Elastic IP address is a static IPv4 address designed for dynamic cloud computing. Yours until you release it. Its use is that when an instance or software fails, you can mask the failure by swapping the elastic IP to another instance. Alternatively, specify the elastic ip in the dns record for your domain, so that the domain points to the instance.
+
+It should be noted that you can assign a network load balancer an elastic IP, but not an application load balancer.
+
 ## Gateway VPC Endpoingt
 
 A gateway vpc endpoint is a fully managed service that allows connectivity from a VPC to AWS services such as S3 without the need for a NAT gateway or public internet gateway. By deploying a Gateway VPC endpoint for S3, the company can ensure all S3 traffic remains within the VPC and does cross the regional boundary. This eliminates regional data transfer charges.

@@ -76,3 +76,15 @@ Organisational units:
   - fault tolerance
   - service limits
 - Trusted Advisor will then return the recommended actions
+
+## AWS Control Tower
+
+AWS Control Tower provides a single location to set up multi-account environments, and govern your AWS workloads with rules for secuity, operations, and internal compliance.
+
+## AWS STS
+
+Security token service - create and provide trusted users with temporary security credentials that can control access to your AWS resources. 
+
+## AWS SSO
+
+Single sign on is a service that makes it easy to centrally manage SSO access to multiple AWS accounts and business applications.
