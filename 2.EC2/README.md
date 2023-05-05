@@ -127,6 +127,11 @@ Autoscaling can be considered as a buffer on top of instamces:
 
 1. Operates at Layer 4, routes traffic with AWS VPC
 
+
+## Gateway Load Balancer
+
+Fully managed, network layer load balancer that routes traffic to targets in VPCs and on-premises networks. It is designed to handle millions of requests per second while maintaining high performance and low latencies. It also integrates with Amazon VPC to allow traffic to flow between your on-premises data centers and VPCs.
+
 ## Load Balancer Stickiness
 
 Stickiness: same client is redirected to same instance
@@ -195,3 +200,6 @@ EBS snapshot is an incremental data backup:
 - Saves on storage cosst by not duplicating data
 - Only data unique to snapshot is removed when deleting the snapshot, if EC2 instance stops or is terminated, all data on EBS volume remains.
 
+## AppFLow
+
+Appflow is a fully managed integration service allowing to securely exchange data between software as a service applications and AWS S3 and Redshift. Appflow helps to remove ec2 as the middle layer which slows down the process of data transmissions and introduces an additional variable. Appflow is a fully managed AWS Service, thus reducing the operational overhead.

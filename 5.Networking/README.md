@@ -135,3 +135,15 @@ VPC peering is a networking connection between two VPCs which enables you to rou
 - Detect threats by monitoring network activity
 - Reports threats and fixes recommendations
 
+## Gateway VPC Endpoingt
+
+A gateway vpc endpoint is a fully managed service that allows connectivity from a VPC to AWS services such as S3 without the need for a NAT gateway or public internet gateway. By deploying a Gateway VPC endpoint for S3, the company can ensure all S3 traffic remains within the VPC and does cross the regional boundary. This eliminates regional data transfer charges.
+
+## Systems Manager Sessions Manager
+
+Fully managed service that provies secure and auditable instance management without the need for bastion hosts, VPNs, or SSH keys - it provides secure and auditable access to EC2 instances and eliminates the need for managing and securing SSH keys.
+
+## Systems Manager Patch Manager
+
+Installs security related updates for operating systems on managed nodes - only downloads a small set of patches based on security.
+
