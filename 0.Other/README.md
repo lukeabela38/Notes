@@ -129,3 +129,7 @@ Customer is responsible for the security of their work in the cloud including:
 - digital catalog to list and sell software
 - explore, test, and purchase software that runs on AWS
 - Pricing, support, options, customer reviews
+
+## Transfer for SFTP
+
+AWS transfer for STFP enables you to move file transfer workloads that use the secure shell file transfer protocol to AWS without needing to modify your applications or modify any servers.

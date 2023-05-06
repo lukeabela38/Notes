@@ -37,3 +37,5 @@ Exchange and store messages between software components
 - service adds message to the queue
 - Users pick up messages
 - Once processed, message is deleted
+
+SQS messages in queue will continue to exist even after EC2 instance processed it - until deleted.

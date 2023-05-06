@@ -54,6 +54,9 @@ Organisational units:
 - Ensure app security with cryptographic keys
 - A sequence of characters that may be used to encrypt or decrypt data
 
+## AWS X-Ray
+
+Helps debug and analyse microservices applications with request tracing to find the root cause of performance and issues
 ## AWS Cloud Compliance
 
 - AWS Artifact
@@ -88,3 +91,7 @@ Security token service - create and provide trusted users with temporary securit
 ## AWS SSO
 
 Single sign on is a service that makes it easy to centrally manage SSO access to multiple AWS accounts and business applications.
+
+## AWS Backup
+
+Centralised backup service that makes it easy and cost effective to backup application data across Cloud Services, helping to meet business and regulatory backup compliance requirements. AWS Backup makes protecting your AWS storage volumes, databases, and file systems simple by providing a central place to configure and audit resources.

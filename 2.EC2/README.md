@@ -191,6 +191,7 @@ The maximum timeout is not applicable to unhealth instances.
 - A service which provides storage volumes, typically used for data which must persist.
 - It is good pracice to backup data with AWS EBS snapshots
 - After creating an EBS volume, you can attach it to an AWS EC2 instance. If the EC2 instance is stopped or termnated, all data on the EBS volume remains
+- EBS volumes support live configuration changes while in rpdouction which means you can modify the volume type, volume size, and IOPS capacity without service interruptions
 
 ## EBS Snapshots
 

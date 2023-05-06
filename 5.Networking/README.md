@@ -144,6 +144,9 @@ An Elastic IP address is a static IPv4 address designed for dynamic cloud comput
 
 It should be noted that you can assign a network load balancer an elastic IP, but not an application load balancer.
 
+## VPC Endpoint
+
+VPC endpoint allows you to connect privately your VPC to supported AWS and VPC endpoint services powered by AWS PrivateLink without needing an Internet Gateway, NAT computer, VPN connection, or AWS Direct Connect connection.
 ## Gateway VPC Endpoingt
 
 A gateway vpc endpoint is a fully managed service that allows connectivity from a VPC to AWS services such as S3 without the need for a NAT gateway or public internet gateway. By deploying a Gateway VPC endpoint for S3, the company can ensure all S3 traffic remains within the VPC and does cross the regional boundary. This eliminates regional data transfer charges.

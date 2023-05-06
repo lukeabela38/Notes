@@ -115,6 +115,10 @@
 
 - backups may be automated for point in time recovert / database snapshots may be used initiated and done manually
 
+- RDS provides metrics metrics in real time for operating system that your DB instance runs on. You can view metrics for your instance using the console.
+
+- Amazon Aurora Global Database is designed for globally distributed applications - allowing a single database to span multiple aws regions. Allows data replication with no impact on database performance.
+
 ## Aurora
 
 - mySQL, PostgreSQL
@@ -124,7 +128,10 @@
 - Continous backup to S3
 - Replicates across 3 AZs
 - Fully managed
+- Cost effective option for infrequent, intermittent, sporadic or unpredictable workloads.
+- Non-serverless database cluster for Aurora is called a provisioned DB cluster
 
+A reader endpoint for an Aurora DB cluster provides load-balancing support for read-only connections to the DB cluster. Use the reader endpoint for read operations, such as queries. By processing those statements on the read-only Aurora Replicas, this endpoint reduces the overhead on the primary instance. It also helps the cluster to scale the capacity to handle simultaneous SELECT queries, proportional to the number of Aurora Replicas in the cluster. Each Aurora DB cluster has one reader endpoint.
 ## Redshift
 
 - Big data analytics service

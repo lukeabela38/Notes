@@ -66,3 +66,7 @@ E.g. The region: eu-west-1 has zones:
   - Automate actions on services with Scripts
 - Software Development Kits: Eases use of AWS Services through an API
 - API fitted to platform or programming language being used
+
+## Amazon Eventbridge
+
+Cloudwatch events - serverless event bus that makes it easy to connect applications together. Uses data from your own applications, integrated software as a service (SaaS) applications, and aws services. This simplifies the process of building event driven architectures by decoupling event producers from conumers.
